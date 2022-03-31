@@ -34,6 +34,9 @@ const app = {};
 // app.apiKey = '81816879fd2d3541c56bc904bce4b7e3';
 app.url = 'https://api.themoviedb.org/3/search/movie?api_key=81816879fd2d3541c56bc904bce4b7e3&query=action&page=1';
 
+//discover/movie to get id
+//then movie/{movieID}
+
 fetch(app.url).then((response) => {
   return response.json();
 }).then((jsonRes) => {
